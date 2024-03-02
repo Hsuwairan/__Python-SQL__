@@ -5,13 +5,3 @@ CREATE TABLE IF NOT EXISTS student(
 );
 
 DROP TABLE student;
-
-CREATE TABLE IF NOT EXISTS artists(
-	id SERIAL PRIMARY KEY,
-	name VARCHAR(80)
-);
-
-DROP TABLE artists;
-
-SELECT *
-FROM artists;
