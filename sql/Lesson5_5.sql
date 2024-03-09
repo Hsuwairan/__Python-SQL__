@@ -25,8 +25,12 @@ VALUES('遠傳電信'),
 	  
 INSERT INTO 聯絡人(客戶id,聯絡人姓名,電話,郵件)
 VALUES(1,'james','02-29834762','789456@gmail.com'),
-	  (2,'wairan','02-22592140','James_Hsu@gmail.com'),
+	  (1,'james','02-29834762','789456@gmail.com'),
 	  (2,'1234','02-1234567582','1234@@gmail.com');
 	  
-DELETE FROM 客戶
-WHERE 客戶_id = 1
+SELECT * FROM 客戶;
+SELECT * FROM 聯絡人;
+
+SELECT 聯絡人id,客戶名稱,聯絡人姓名,電話,郵件
+FROM 聯絡人 LEFT JOIN 客戶 ON 聯絡人.客戶id = 客戶.客戶_id
+WHERE 客戶名稱 = '遠傳電信'
