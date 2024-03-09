@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS stations;
 CREATE TABLE IF NOT EXISTS stations(
 	編號 INT PRIMARY KEY,
 	名稱 VARCHAR(20) NOT NULL,
@@ -12,3 +13,6 @@ CREATE TABLE IF NOT EXISTS stations(
 );
 
 SELECT * FROM stations;
+
+SELECT COUNT(*) AS 筆數
+FROM stations;
