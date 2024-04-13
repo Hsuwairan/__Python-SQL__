@@ -1,4 +1,3 @@
-#建立電腦的環境變數(不是真實的,是模擬的),並且載入
 from dotenv import load_dotenv
 import psycopg2
 import os
@@ -12,6 +11,7 @@ with psycopg2.connect(os.environ['POSTGRE_PASSWORD']) as conn:
         '''
         cursor.execute(sql)
         datas:list = cursor.fetchmany(10)
+        
 
 for item in datas:
     print(item)
