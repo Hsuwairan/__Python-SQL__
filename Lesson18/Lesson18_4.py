@@ -4,7 +4,7 @@ import streamlit as st
 from dotenv import load_dotenv
 load_dotenv()
 
-st.cache_resource
+@st.cache_resource
 def get_sarea()->tuple:
     conn = psycopg2.connect(os.environ['POSTGRE_PASSWORD'])
     with conn:
